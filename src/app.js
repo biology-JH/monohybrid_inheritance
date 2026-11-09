@@ -104,9 +104,9 @@ const corePoints = [
   {
     n: 11, title: 'Genetic diagrams and phenotype ratios',
     text: 'Label parents’ phenotypes and genotypes; list one-allele gametes; combine them in a Punnett square; then state offspring phenotypes and the 1:1 or 3:1 expected ratio.',
-    example: 'Tt × tt → 1 tall : 1 dwarf. Tt × Tt → 3 tall : 1 dwarf. Slide exercise: Bb × bb gives 50% brown guinea pigs.',
+    example: 'Tt × tt → 1 tall : 1 dwarf. Tt × Tt → 3 tall : 1 dwarf. Exercise: Bb × bb gives 50% brown guinea pigs.',
     images: [
-      { src: '/ppt-assets/part1_genetic-diagram.png', alt: 'Slide diagram of a Tt by Tt cross from parents through gametes and offspring', caption: 'Worked genetic diagram · supplied Part 1 slide' },
+      { src: '/ppt-assets/part1_genetic-diagram.png', alt: 'Diagram showing a Tt × Tt cross from parents through gametes to offspring', caption: 'Worked genetic diagram' },
       { src: '/ppt-assets/part1_tall-dwarf-ratio.png', alt: 'Punnett square showing a Tt × tt cross and a 1:1 tall-to-dwarf phenotype ratio', caption: 'Tt × tt · 1 tall : 1 dwarf' }
     ],
     questions: [
