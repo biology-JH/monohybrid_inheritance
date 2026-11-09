@@ -21,10 +21,7 @@
         </div>
         <a class="hero-link" href="#part-one">Begin with the starter <span aria-hidden="true">↓</span></a>
       </div>
-      <figure class="hero-visual image-frame">
-        <img src="/ppt-assets/part1_image-6-1.png" alt="A colourful DNA double helix from the supplied lesson presentation" />
-        <figcaption>One gene at a time · Image from the supplied lesson slides</figcaption>
-      </figure>
+      <p class="visually-hidden">Full-width background image: a DNA double helix and gene-locus diagram from the supplied Part 1 PowerPoint.</p>
     </header>
 
     <nav class="jump-nav" aria-label="Lesson navigation">
@@ -48,7 +45,7 @@
             <p>Compare the earlobe drawings. What can you observe—and what can’t a picture tell you about someone’s genotype?</p>
             <div class="starter-questions">
               <details><summary>Check 1 · What difference is visible?</summary><p>One earlobe appears attached and the other hangs freely. This is an observation, not a genotype.</p></details>
-              <details><summary>Check 2 · Does the image prove one simple dominant–recessive gene?</summary><p>No. The picture alone cannot establish how the trait is inherited. Use it to practise separating observation from genetic evidence.</p></details>
+              <details><summary>Check 2 · How can a hidden recessive trait appear in a child?</summary><p>Two unaffected carrier parents may each pass on a recessive allele.</p></details>
               <details><summary>Check 3 · What is inheritance?</summary><p>The transmission of genetic information from one generation to the next.</p></details>
             </div>
           </div>
@@ -93,7 +90,7 @@
         <div class="sequence-heading">
           <p class="section-kicker">SYLLABUS SEQUENCE · CORE 1–12</p>
           <h3>One step at a time</h3>
-          <p>Each numbered card follows one official syllabus point and ends with two self-check questions.</p>
+          <p>Each numbered card follows one official syllabus point and ends with two or three self-check questions.</p>
         </div>
         <div id="core-points" class="point-list" aria-label="Core syllabus points 1 to 12"></div>
 
@@ -108,6 +105,9 @@
             <select id="core-cross">
               <option value="tall-cross">Tt × Tt · dominant tall allele</option>
               <option value="test-cross">Tt × tt · tall × dwarf</option>
+              <option value="guinea-pig-cross">Bb × bb · guinea pigs</option>
+              <option value="albinism-cross">Aa × Aa · albinism</option>
+              <option value="cf-cross">Cc × Cc · cystic fibrosis</option>
             </select>
             <button class="action-button" id="core-calculate" type="button">Calculate outcomes</button>
           </div>
@@ -118,9 +118,9 @@
           <p class="section-kicker">PART 1 · PLENARY</p>
           <h3 id="plenary-one-title">Exit ticket · explain the pattern</h3>
           <div class="plenary-questions">
-            <details><summary>1 · Two heterozygous parents have genotypes Aa and Aa. What fraction of offspring are aa?</summary><p>One quarter, or 25%. The expected genotype ratio is 1 AA : 2 Aa : 1 aa.</p></details>
+            <details><summary>1 · Two carrier parents Aa have a child. What is the chance of albinism (aa)?</summary><p>25% (1 in 4) for each pregnancy; each pregnancy has the same probability.</p></details>
             <details><summary>2 · What phenotype ratio is expected if A is dominant?</summary><p>Three with the dominant phenotype to one with the recessive phenotype (3:1).</p></details>
-            <details><summary>3 · What should a Punnett square show?</summary><p>The possible allele combinations in offspring and the expected proportions—not a guarantee for a small family.</p></details>
+            <details><summary>3 · Match the terms: genotype, phenotype, heterozygous and recessive allele.</summary><p>Allele combination; observable features; two different alleles; expressed only without a dominant allele.</p></details>
           </div>
         </section>
       </section>
@@ -153,7 +153,7 @@
           <p class="section-kicker">LEARNING OBJECTIVES · EXTENDED (SUPPLEMENT)</p>
           <h3 id="objectives-two-title">What · Why · How</h3>
           <div class="objective-triad">
-            <div><h4>What</h4><p>Explain test crosses, codominance, ABO groups and sex linkage.</p></div>
+            <div><h4>What</h4><p>Explain test crosses, codominance, ABO groups, sex determination and sex linkage.</p></div>
             <div><h4>Why</h4><p>Use inheritance models to explain more complex patterns.</p></div>
             <div><h4>How</h4><p>Construct crosses and calculate offspring genotypes and phenotypic ratios.</p></div>
           </div>
@@ -169,7 +169,7 @@
         <section class="practice-panel extended-practice" aria-labelledby="extended-calculator-title">
           <div class="practice-heading">
             <p class="section-kicker">INTERACTIVE EXERCISE · EXTENDED</p>
-            <h3 id="extended-calculator-title">Calculate codominant, ABO and sex-linked crosses</h3>
+            <h3 id="extended-calculator-title">Calculate test, codominant, ABO and sex-linked crosses</h3>
             <p>Choose a model. The calculator combines gametes, counts the four outcomes, and reports genotype and phenotype proportions.</p>
           </div>
           <div class="calculator-controls">
@@ -178,6 +178,10 @@
               <option value="roan-cross">CᴿCᵂ × CᴿCᵂ · roan cattle</option>
               <option value="abo-cross">IᴬIᴮ × IᵒIᵒ · ABO blood groups</option>
               <option value="colour-cross">XᴿXʳ × XᴿY · colour vision</option>
+              <option value="dog-ee">EE × ee · dog test cross</option>
+              <option value="dog-ee-small">Ee × ee · dog test cross</option>
+              <option value="fly-test-cross">vg⁺vg × vgvg · fly test cross</option>
+              <option value="affected-father">XʳY × XᴿXᴿ · affected father</option>
             </select>
             <button class="action-button" id="extended-calculate" type="button">Calculate outcomes</button>
           </div>
