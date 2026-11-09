@@ -1,0 +1,5 @@
+# Generated static publish output
+/dist/
+
+# Local Preview-only asset mapping. Static publishing copies from public/ppt-assets.
+/ppt-assets
