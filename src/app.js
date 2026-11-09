@@ -107,7 +107,7 @@ const corePoints = [
     example: 'Tt × tt → 1 tall : 1 dwarf. Tt × Tt → 3 tall : 1 dwarf. Slide exercise: Bb × bb gives 50% brown guinea pigs.',
     images: [
       { src: '/ppt-assets/part1_genetic-diagram.png', alt: 'Slide diagram of a Tt by Tt cross from parents through gametes and offspring', caption: 'Worked genetic diagram · supplied Part 1 slide' },
-      { src: '/ppt-assets/part1_guinea-pig-exercise.png', alt: 'Guinea-pig cross exercise from the supplied Part 1 slides', caption: 'Practice: Bb × bb · supplied Part 1 slide' }
+      { src: '/ppt-assets/part1_tall-dwarf-ratio.png', alt: 'Punnett square showing a Tt × tt cross and a 1:1 tall-to-dwarf phenotype ratio', caption: 'Tt × tt · 1 tall : 1 dwarf' }
     ],
     questions: [
       ['What phenotype ratio is expected from Tt × tt?', '1 tall : 1 dwarf.'],
