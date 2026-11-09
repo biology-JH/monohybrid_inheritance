@@ -1,0 +1,9 @@
+# TODO
+
+- [x] **Syllabus sequence and coverage:** Check across the Cambridge IGCSE Biology 0610 section 17.4 Monohybrid inheritance syllabus to ensure all points are covered; label which one is Core and Extended; put syllabus points in order and put everything in chronological order. Use the syllabus points and content from both PowerPoints. The website covers Core 1–12 and Extended (officially Supplement) 13–18 in sequence.
+- [x] **Part 1 lesson flow:** Use Part 1 of the PowerPoint; include a Part 1 starter, learning objectives with What, Why and How, and a plenary at the end. Place the 12-term whole-website key-term section immediately after the Part 1 starter.
+- [x] **Part 2 lesson flow:** Use Part 2 of the PowerPoint; include a Part 2 starter, learning objectives with What, Why and How, and a plenary at the end.
+- [x] **Glossary:** Include 12 hard key terms for the whole website; show English key terms and Traditional Chinese translations; lay out four columns in each row as keyword, Chinese, keyword, Chinese. Extended terms are also translated beside their lesson explanations.
+- [x] **Questions and practice:** Put 2–3 questions after each syllabus point. Include exercises and interactive calculations. Each of the 18 objectives has two reveal-answer questions; interactive calculators cover Core 3:1 and 1:1 crosses, codominance, ABO groups, and sex-linked inheritance.
+- [x] **Pictures and presentation:** Use necessary pictures from the PowerPoints, not necessarily every picture; do not use any Manus picture. Include one picture from a PowerPoint as a large, beautiful header image, and display selected pictures large and beautifully in relevant sections. Eleven relevant PowerPoint images are used; no generated or external lesson pictures are included.
+- [x] **Concise, large typography:** Keep all context concise and use font size 24px at least. Browser measurement confirmed the smallest rendered text is 24px.
