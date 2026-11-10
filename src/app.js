@@ -13,7 +13,7 @@ const corePoints = [
     text: 'A genotype is an organism’s alleles for a gene. An allele is a form of that gene; both alleles occupy the same locus (基因座) on homologous chromosomes (同源染色體).',
     example: 'BB, Bb and bb are genotypes; B and b are alleles at one locus.',
     images: [
-      { src: '/ppt-assets/part1_genes-loci.png', alt: 'The same gene locus marked on a pair of homologous chromosomes', caption: 'Alleles of one gene share a locus · supplied Part 1 slide' }
+      { src: '/ppt-assets/part1_genes-loci.png', alt: 'The same gene locus marked on a pair of homologous chromosomes', caption: 'Alleles of one gene share a locus' }
     ],
     questions: [
       ['Which word means the allele combination of an organism?', 'Genotype (基因型).'],
@@ -24,7 +24,7 @@ const corePoints = [
     n: 3, title: 'Phenotype',
     text: 'A phenotype is an organism’s observable features. It describes what the characteristic looks like, not the allele letters.',
     example: 'If T is dominant for tall plants, TT and Tt plants have a tall phenotype; tt plants are dwarf.',
-    image: { src: '/ppt-assets/part1_image-9-1.png', alt: 'Tall and dwarf pea plants used to illustrate contrasting phenotypes', caption: 'Contrasting plant phenotypes · supplied Part 1 slide' },
+    image: { src: '/ppt-assets/part1_image-9-1.png', alt: 'Tall and dwarf pea plants used to illustrate contrasting phenotypes', caption: 'Contrasting plant phenotypes' },
     questions: [
       ['Which word means observable features?', 'Phenotype (表現型).'],
       ['If T is dominant, what is the phenotype of Tt?', 'Tall.']
@@ -43,7 +43,7 @@ const corePoints = [
     n: 5, title: 'Pure-breeding',
     text: 'Pure-breeding individuals are homozygous. When homozygous parents of the same genotype breed, their offspring inherit the same allele pair.',
     example: 'BB × BB produces BB offspring; bb × bb produces bb offspring.',
-    image: { src: '/ppt-assets/part1_image-10-1.png', alt: 'A plant diagram showing the dominant tall phenotype', caption: 'A dominant phenotype illustration from the supplied Part 1 slides' },
+    image: { src: '/ppt-assets/part1_image-10-1.png', alt: 'A plant diagram showing the dominant tall phenotype', caption: 'A dominant phenotype illustration' },
     questions: [
       ['Do BB × BB parents produce offspring with a different genotype?', 'No. The offspring are BB.'],
       ['Is Bb pure-breeding?', 'No. It has two different alleles and can pass on either one.']
@@ -81,7 +81,7 @@ const corePoints = [
     text: 'A recessive allele is expressed only when no dominant allele of that gene is present in the genotype. “Recessive” does not mean rare.',
     example: 'Cystic fibrosis (CF) is recessive: CC is unaffected, Cc is an unaffected carrier, and cc is affected.',
     images: [
-      { src: '/ppt-assets/part1_cystic-fibrosis.jpg', alt: 'Cystic-fibrosis illustration from the supplied Part 1 slides', caption: 'CF inheritance example · supplied Part 1 slide' }
+      { src: '/ppt-assets/part1_cystic-fibrosis.jpg', alt: 'Cystic-fibrosis illustration', caption: 'CF inheritance example' }
     ],
     questions: [
       ['When is a recessive allele expressed?', 'When there is no dominant allele of that gene in the genotype.'],
@@ -93,8 +93,8 @@ const corePoints = [
     text: 'A pedigree (系譜圖) traces a characteristic across generations I, II and III. Squares represent males; circles represent females; shading marks affected people. Child numbers identify individuals. Trace parents and children to infer genotypes.',
     example: 'Recessive phenotype = aa; two unaffected carriers (Aa) can have an affected child. Dominant phenotype = A_ (AA or Aa); affected people usually have an affected parent.',
     images: [
-      { src: '/ppt-assets/part1_image-15-1.png', alt: 'Pedigree showing unaffected parents with an affected child', caption: 'Recessive pattern · supplied Part 1 slide' },
-      { src: '/ppt-assets/part1_dominant-pedigree.png', alt: 'Pedigree diagram used to discuss dominant inheritance', caption: 'Dominant pattern · supplied Part 1 slide' }
+      { src: '/ppt-assets/part1_image-15-1.png', alt: 'Pedigree showing unaffected parents with an affected child', caption: 'Recessive pattern' },
+      { src: '/ppt-assets/part1_dominant-pedigree.png', alt: 'Pedigree diagram used to discuss dominant inheritance', caption: 'Dominant pattern' }
     ],
     questions: [
       ['What does a shaded symbol usually represent in a pedigree?', 'An individual who shows the characteristic being tracked.'],
@@ -106,7 +106,7 @@ const corePoints = [
     text: 'Label parents’ phenotypes and genotypes; list one-allele gametes; combine them in a Punnett square; then state offspring phenotypes and the 1:1 or 3:1 expected ratio.',
     example: 'Tt × tt → 1 tall : 1 dwarf. Tt × Tt → 3 tall : 1 dwarf.',
     images: [
-      { src: '/ppt-assets/part1_genetic-diagram.png', alt: 'Diagram showing a Tt × Tt cross from parents through gametes to offspring', caption: 'Worked genetic diagram' },
+      { src: '/ppt-assets/part1_genetic-diagram-focus.png', alt: 'Genetic diagram showing a Tt × Tt cross from parents through gametes, a Punnett square and offspring', caption: 'Worked genetic diagram' },
       { src: '/ppt-assets/part1_tall-dwarf-ratio.png', alt: 'Punnett square showing a Tt × tt cross and a 1:1 tall-to-dwarf phenotype ratio', caption: 'Tt × tt · 1 tall : 1 dwarf' }
     ],
     questions: [
@@ -119,7 +119,7 @@ const corePoints = [
     text: 'In a Punnett square, place one parent’s gametes along the top and the other parent’s down the side. Combine the alleles in each cell to show all possible offspring genotypes.',
     example: 'Tt × Tt gives 1 TT : 2 Tt : 1 tt. That is a genotype ratio; if T is dominant, the phenotype ratio is 3 tall : 1 dwarf.',
     images: [
-      { src: '/ppt-assets/part1_worked-cross.jpg', alt: 'Worked monohybrid Punnett-square example from the supplied Part 1 slides', caption: 'Tt × Tt · supplied Part 1 worked-cross slide' }
+      { src: '/ppt-assets/part1_worked-cross.jpg', alt: 'Worked monohybrid Punnett-square example', caption: 'Tt × Tt · worked cross' }
     ],
     questions: [
       ['How many different genotypes can Tt × Tt produce?', 'Three: TT, Tt and tt.'],
@@ -133,7 +133,7 @@ const extendedPoints = [
     n: 13, title: 'Test cross',
     text: 'To identify an unknown genotype with the dominant phenotype, cross it with a homozygous recessive individual (測交). A recessive offspring shows that the unknown parent carried the recessive allele.',
     example: 'Dogs (both BB): EE × ee gives all dark; Ee × ee gives 1 dark : 1 yellow. A fly cross with 48 long-winged and 51 vestigial offspring is close to 1:1, so the parent is vg⁺vg.',
-    image: { src: '/ppt-assets/part2_image-7-1.jpg', alt: 'Dogs illustrating the unknown-parent and tester idea in the supplied lesson', caption: 'Test-cross example image from the supplied Part 2 slides' },
+    image: { src: '/ppt-assets/part2_test-cross-diagram.png', alt: 'Test-cross outcomes when an unknown dominant genotype is crossed with a homozygous recessive tester', caption: 'Test-cross genotype outcomes' },
     questions: [
       ['Which genotype is used as the tester?', 'Homozygous recessive, such as ee.'],
       ['What does a recessive offspring reveal about a dominant-looking unknown parent?', 'The unknown parent carries a recessive allele, so it is heterozygous.'],
@@ -145,8 +145,8 @@ const extendedPoints = [
     text: 'In codominance (共顯性), both alleles contribute to the heterozygote’s phenotype; neither masks the other.',
     example: 'Roan cattle (CᴿCᵂ) show red and white hairs. Sickle-cell trait (鐮狀細胞性狀; HbᴬHbˢ) produces both haemoglobin variants.',
     images: [
-      { src: '/ppt-assets/part2_image-13-1.jpg', alt: 'Roan cattle showing both red and white hairs', caption: 'Roan cattle · supplied Part 2 slide' },
-      { src: '/ppt-assets/part2_sickle-cell.png', alt: 'Diagram comparing red blood cells and haemoglobin variants in the supplied slide', caption: 'Sickle-cell trait example · supplied Part 2 slide' }
+      { src: '/ppt-assets/part2_image-13-1.jpg', alt: 'Roan cattle showing both red and white hairs', caption: 'Roan cattle' },
+      { src: '/ppt-assets/part2_sickle-cell.png', alt: 'Diagram comparing red blood cells and haemoglobin variants', caption: 'Sickle-cell trait example' }
     ],
     questions: [
       ['What happens to both alleles in a codominant heterozygote?', 'Both contribute to the phenotype.'],
@@ -158,8 +158,8 @@ const extendedPoints = [
     text: 'ABO blood groups (ABO血型) have phenotypes A, B, AB and O. Iᴬ makes antigen A; Iᴮ makes antigen B; Iᵒ makes neither. Iᴬ and Iᴮ are codominant and both dominate Iᵒ.',
     example: 'A: IᴬIᴬ or IᴬIᵒ · B: IᴮIᴮ or IᴮIᵒ · AB: IᴬIᴮ · O: IᵒIᵒ. IᴬIᴮ × IᵒIᵒ → 1 group A : 1 group B.',
     images: [
-      { src: '/ppt-assets/part2_blood-antigens.png', alt: 'Red blood cells displaying A, B, both or no ABO antigens', caption: 'ABO antigens · supplied Part 2 slide' },
-      { src: '/ppt-assets/part2_image-16-1.png', alt: 'Punnett square for IᴬIᴮ by IᵒIᵒ', caption: 'ABO cross · supplied Part 2 slide' }
+      { src: '/ppt-assets/part2_blood-antigens.png', alt: 'Red blood cells displaying A, B, both or no ABO antigens', caption: 'ABO antigens' },
+      { src: '/ppt-assets/part2_image-16-1.png', alt: 'Punnett square for IᴬIᴮ by IᵒIᵒ', caption: 'ABO inheritance cross' }
     ],
     questions: [
       ['What is the genotype of a person with group AB?', 'IᴬIᴮ.'],
@@ -171,7 +171,7 @@ const extendedPoints = [
     n: 16, title: 'Sex-linked characteristics',
     text: 'Humans have 22 pairs of autosomes (常染色體) and one pair of sex chromosomes: usually XX females and XY males. A sex-linked gene is on a sex chromosome, usually X; XY males have one X-linked allele (hemizygous, 半合子).',
     example: 'Ova carry X; sperm carry X or Y, determining sex with an expected 1:1 ratio. Fathers pass X to daughters and Y to sons, so there is no father-to-son transmission of an X-linked allele.',
-    image: { src: '/ppt-assets/part2_image-19-1.png', alt: 'X and Y sex chromosomes shown in the supplied Part 2 slides', caption: 'Sex chromosomes · supplied Part 2 slide' },
+    image: { src: '/ppt-assets/part2_image-19-1.png', alt: 'X and Y sex chromosomes', caption: 'Sex chromosomes' },
     questions: [
       ['Where is the gene for a sex-linked characteristic located?', 'On a sex chromosome.'],
       ['Why can a recessive allele on the X chromosome be expressed in an XY male?', 'There may be no corresponding allele on the Y chromosome to mask it.']
@@ -182,8 +182,8 @@ const extendedPoints = [
     text: 'Red–green colour blindness is an example of X-linked recessive inheritance (紅綠色盲). Use Xᴿ for the typical dominant allele and Xʳ for the recessive allele. A female XᴿXʳ is an unaffected carrier; an XʳY male is affected.',
     example: 'Females usually need XʳXʳ to be affected; XᴿXʳ females are carriers. XʳY males are affected because Y has no matching allele at this locus—one reason more males are affected.',
     images: [
-      { src: '/ppt-assets/part2_image-20-1.png', alt: 'Chromosome diagram showing an X-linked gene and no matching allele on Y', caption: 'X-linked locus · supplied Part 2 slide' },
-      { src: '/ppt-assets/part2_colour-blindness.png', alt: 'Colour-vision dot plate from the supplied Part 2 slides', caption: 'Red–green colour-vision example · supplied Part 2 slide' }
+      { src: '/ppt-assets/part2_image-20-1.png', alt: 'Chromosome diagram showing an X-linked gene and no matching allele on Y', caption: 'X-linked locus' },
+      { src: '/ppt-assets/part2_colour-blindness.png', alt: 'Colour-vision dot plate', caption: 'Red–green colour-vision example' }
     ],
     questions: [
       ['What genotype represents a carrier female?', 'XᴿXʳ.'],
@@ -196,7 +196,7 @@ const extendedPoints = [
     text: 'Draw crosses for codominance or sex linkage and calculate phenotype ratios. Attach the allele to X; write Y without an allele. Carrier mothers can pass Xʳ to sons; fathers pass their X to daughters, not sons.',
     example: 'XᴿXʳ × XᴿY: 50% of sons and 25% of all children are expected to be colour-blind. Daughters receive their father’s Xᴿ, so they are unaffected.',
     images: [
-      { src: '/ppt-assets/part2_sex-linked-pedigree.png', alt: 'Pedigree used to explain X-linked inheritance across generations', caption: 'X-linked pedigree · supplied Part 2 slide' }
+      { src: '/ppt-assets/part2_sex-linked-pedigree.png', alt: 'Pedigree used to explain X-linked inheritance across generations', caption: 'X-linked pedigree' }
     ],
     questions: [
       ['For XᴿXʳ × XᴿY, what fraction of sons are expected to be XʳY?', 'One half (50%) of sons.'],
@@ -220,9 +220,13 @@ function renderPoint(point, extended = false) {
   const questionCount = point.questions.length === 3 ? 'Three' : 'Two';
   const pictures = point.images || (point.image ? [point.image] : []);
   const imageMarkup = pictures.length
-    ? `<div class="card-visual${pictures.length > 1 ? ' card-gallery' : ''}">${pictures.map((picture) => `<figure class="image-frame"><img src="${escapeHTML(picture.src)}" alt="${escapeHTML(picture.alt)}" loading="lazy" /><figcaption>${escapeHTML(picture.caption)}</figcaption></figure>`).join('')}<p class="visual-note">${escapeHTML(point.example || '')}</p></div>`
+    ? `<div class="card-visual${pictures.length > 1 ? ' card-gallery' : ''}">${pictures.map((picture, index) => {
+        const focalDiagram = (point.n === 11 && index === 0) || point.n === 13;
+        const focusAttributes = focalDiagram ? ' tabindex="0" aria-label="Scrollable diagram"' : '';
+        return `<figure class="image-frame${focalDiagram ? ' focal-diagram' : ''}"${focusAttributes}><img src="${escapeHTML(picture.src)}" alt="${escapeHTML(picture.alt)}" loading="lazy" /><figcaption>${escapeHTML(picture.caption)}</figcaption></figure>`;
+      }).join('')}<p class="visual-note">${escapeHTML(point.example || '')}</p></div>`
     : `<p class="example-line"><strong>Apply it:</strong> ${escapeHTML(point.example || '')}</p>`;
-  return `<article class="objective-card${extended ? ' extended-card' : ''}" aria-labelledby="point-${point.n}-title">
+  return `<article class="objective-card${extended ? ' extended-card' : ''}" data-point="${point.n}" aria-labelledby="point-${point.n}-title">
     <div class="objective-head"><span class="objective-number">${String(point.n).padStart(2, '0')}</span><span class="scope-tag">${label}</span><h3 id="point-${point.n}-title">${escapeHTML(point.title)}</h3></div>
     <p class="explanation">${escapeHTML(point.text)}</p>
     ${imageMarkup}

@@ -121,6 +121,10 @@ td:nth-child(2), td:nth-child(4) { color: #385e50; font-weight: 600; }
 .card-gallery .image-frame { min-width: 0; }
 .card-gallery .image-frame img { width: 100%; height: clamp(250px, 24vw, 340px); min-height: 0; max-height: none; object-fit: contain; }
 .card-gallery .visual-note { grid-column: 1 / -1; }
+#core-points .objective-card[data-point="11"] .card-gallery { grid-template-columns: minmax(0, 1.8fr) minmax(0, 0.82fr); align-items: start; }
+#core-points .objective-card[data-point="11"] .focal-diagram img { width: 100%; height: auto; min-height: 0; max-height: none; object-fit: contain; }
+#extended-points .objective-card[data-point="13"] .card-visual { grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.9fr); align-items: start; }
+#extended-points .objective-card[data-point="13"] .focal-diagram img { width: 100%; height: auto; min-height: 0; max-height: none; object-fit: contain; }
 .quick-checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; margin-top: 1rem; }
 .quick-checks details { height: 100%; }
 .quick-checks summary { line-height: 1.35; }
@@ -162,6 +166,9 @@ td:nth-child(2), td:nth-child(4) { color: #385e50; font-weight: 600; }
   .starter-image { max-width: 760px; }
   .card-visual { grid-template-columns: 1fr; }
   .card-visual .image-frame { max-width: 720px; }
+  .jump-nav { position: static; top: auto; }
+  #core-points .objective-card[data-point="11"] .card-gallery { grid-template-columns: 1fr; }
+  #extended-points .objective-card[data-point="13"] .card-visual { grid-template-columns: 1fr; }
   .result-layout { grid-template-columns: 1fr; }
 }
 
@@ -185,6 +192,12 @@ td:nth-child(2), td:nth-child(4) { color: #385e50; font-weight: 600; }
   .card-visual .image-frame img { min-height: 180px; }
   .card-gallery { grid-template-columns: 1fr; }
   .card-gallery .image-frame img { height: 280px; min-height: 0; }
+  #core-points .objective-card[data-point="11"] .focal-diagram,
+  #extended-points .objective-card[data-point="13"] .focal-diagram { overflow-x: auto; overflow-y: hidden; overscroll-behavior-inline: contain; }
+  #core-points .objective-card[data-point="11"] .focal-diagram img { width: 760px; height: auto; min-height: 0; max-height: none; }
+  #extended-points .objective-card[data-point="13"] .focal-diagram img { width: 560px; height: auto; min-height: 0; max-height: none; }
+  #core-points .objective-card[data-point="11"] .focal-diagram::after,
+  #extended-points .objective-card[data-point="13"] .focal-diagram::after { content: 'Swipe to see the full diagram →'; display: block; padding: 0.35rem 0.85rem 0.65rem; color: var(--muted); font-size: 1rem; font-weight: 600; }
 }
 
 @media (prefers-reduced-motion: reduce) {
