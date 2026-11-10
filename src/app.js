@@ -219,12 +219,15 @@ function renderPoint(point, extended = false) {
   const label = extended ? 'Extended (Supplement)' : 'Core';
   const questionCount = point.questions.length === 3 ? 'Three' : 'Two';
   const pictures = point.images || (point.image ? [point.image] : []);
+  const exampleMarkup = point.n === 13
+    ? `<div class="visual-note">${escapeHTML(point.example || '')}<figure class="image-frame test-cross-dogs"><img src="/ppt-assets/user-dog-family.webp" alt="Four dark-coated dogs sitting together, with varied visible coat markings and build" loading="lazy" /><figcaption>Dog coat variation</figcaption></figure></div>`
+    : `<p class="visual-note">${escapeHTML(point.example || '')}</p>`;
   const imageMarkup = pictures.length
     ? `<div class="card-visual${pictures.length > 1 ? ' card-gallery' : ''}">${pictures.map((picture, index) => {
         const focalDiagram = (point.n === 11 && index === 0) || point.n === 13;
         const focusAttributes = focalDiagram ? ' tabindex="0" aria-label="Scrollable diagram"' : '';
         return `<figure class="image-frame${focalDiagram ? ' focal-diagram' : ''}"${focusAttributes}><img src="${escapeHTML(picture.src)}" alt="${escapeHTML(picture.alt)}" loading="lazy" /><figcaption>${escapeHTML(picture.caption)}</figcaption></figure>`;
-      }).join('')}<p class="visual-note">${escapeHTML(point.example || '')}</p></div>`
+      }).join('')}${exampleMarkup}</div>`
     : `<p class="example-line"><strong>Apply it:</strong> ${escapeHTML(point.example || '')}</p>`;
   return `<article class="objective-card${extended ? ' extended-card' : ''}" data-point="${point.n}" aria-labelledby="point-${point.n}-title">
     <div class="objective-head"><span class="objective-number">${String(point.n).padStart(2, '0')}</span><span class="scope-tag">${label}</span><h3 id="point-${point.n}-title">${escapeHTML(point.title)}</h3></div>

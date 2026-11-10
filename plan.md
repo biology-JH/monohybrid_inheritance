@@ -2,7 +2,7 @@
 
 ## Product and implementation
 
-A responsive, single-page educational website in plain HTML, CSS and JavaScript, served on the project's configured Preview port. The page follows the official Cambridge IGCSE Biology 0610 2026–2028 section 17.4 order exactly: Core points 1–12 in Part 1, then Supplement/Extended points 13–18 in Part 2. Each numbered objective has two or three concise comprehension questions. Starter checks and plenaries are separate per part. A 12-term English–Traditional Chinese glossary sits immediately after the Part 1 starter and uses four columns per row. Interactive Punnett-square calculators support cross practice. Use selected original PowerPoint pictures only, including a full-width slide image as the background behind the hero title; add the concise lesson content, examples, practice prompts and answers from both decks without repeating animation/answer slides. Do not generate or source replacement pictures. Keep instructional text concise and typography at or above 24px. Make the syllabus objective numbering and the Core / Extended (officially Supplement) distinction explicit.
+A responsive, single-page educational website in plain HTML, CSS and JavaScript, served on the project's configured Preview port. The page follows the official Cambridge IGCSE Biology 0610 2026–2028 section 17.4 order exactly: Core points 1–12 in Part 1, then Supplement/Extended points 13–18 in Part 2. Each numbered objective has two or three concise comprehension questions. Starter checks and plenaries are separate per part. A 12-term English–Traditional Chinese glossary sits immediately after the Part 1 starter and uses four columns per row. Interactive Punnett-square calculators support cross practice. Use selected original PowerPoint pictures, including a full-width slide image as the background behind the hero title; also use the user's uploaded dog photograph beside the retained, enlarged test-cross diagram. Add the concise lesson content, examples, practice prompts and answers from both decks without repeating animation/answer slides. Do not use generated or Manus pictures. Keep instructional text concise and typography at or above 24px. Make the syllabus objective numbering and the Core / Extended (officially Supplement) distinction explicit.
 
 Use static assets and a compact JavaScript module; no account, database or other backend is needed. Include the website route manifest at `/manus-routes.json`. Keep a source copy of selected user-provided pictures in `public/ppt-assets/`. Use the existing Webdev runtime port (expected 3000) and a self-contained static build directory if required by project configuration.
 
@@ -11,7 +11,7 @@ Use static assets and a compact JavaScript module; no account, database or other
 - `index.html` — page structure, lesson content, metadata and embedded-source attribution.
 - `src/styles.css` — responsive visual system, spacing, large type and accessible interaction states.
 - `src/app.js` — glossary rendering, lesson checks, starter/plenary reveal and Punnett calculator behavior.
-- `public/ppt-assets/` — extracted original PPT image files, selecting only the images used on the site.
+- `public/ppt-assets/` — selected original PPT image files and the user-supplied dog photograph used on the site.
 - `public/manus-routes.json` — the canonical one-page route manifest.
 - `dist/` — static deployment output if project build settings require it.
 - `plan.md`, `TODO.md` — design decisions and acceptance outcomes.

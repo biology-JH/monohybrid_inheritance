@@ -125,6 +125,8 @@ td:nth-child(2), td:nth-child(4) { color: #385e50; font-weight: 600; }
 #core-points .objective-card[data-point="11"] .focal-diagram img { width: 100%; height: auto; min-height: 0; max-height: none; object-fit: contain; }
 #extended-points .objective-card[data-point="13"] .card-visual { grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.9fr); align-items: start; }
 #extended-points .objective-card[data-point="13"] .focal-diagram img { width: 100%; height: auto; min-height: 0; max-height: none; object-fit: contain; }
+#extended-points .objective-card[data-point="13"] .test-cross-dogs { margin: 0.85rem 0 0; }
+#extended-points .objective-card[data-point="13"] .test-cross-dogs img { width: 100%; height: auto; min-height: 0; max-height: none; object-fit: contain; }
 .quick-checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; margin-top: 1rem; }
 .quick-checks details { height: 100%; }
 .quick-checks summary { line-height: 1.35; }
