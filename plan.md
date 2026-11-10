@@ -4,7 +4,7 @@
 
 A responsive, single-page educational website in plain HTML, CSS and JavaScript, served on the project's configured Preview port. The page follows the official Cambridge IGCSE Biology 0610 2026–2028 section 17.4 order exactly: Core points 1–12 in Part 1, then Supplement/Extended points 13–18 in Part 2. Each numbered objective has two or three concise comprehension questions. Starter checks and plenaries are separate per part. A 12-term English–Traditional Chinese glossary sits immediately after the Part 1 starter and uses four columns per row. Interactive Punnett-square calculators support cross practice. Use selected original PowerPoint pictures, including a full-width slide image as the background behind the hero title; also use the user's uploaded dog photograph beside the retained, enlarged test-cross diagram. Add the concise lesson content, examples, practice prompts and answers from both decks without repeating animation/answer slides. Do not use generated or Manus pictures. Keep instructional text concise and typography at or above 24px. Make the syllabus objective numbering and the Core / Extended (officially Supplement) distinction explicit.
 
-Use static assets and a compact JavaScript module; no account, database or other backend is needed. Include the website route manifest at `/manus-routes.json`. Keep a source copy of selected user-provided pictures in `public/ppt-assets/`. Use the existing Webdev runtime port (expected 3000) and a self-contained static build directory if required by project configuration.
+Use static assets and a compact JavaScript module; no account, database or other backend is needed. Include the website route manifest at `/manus-routes.json`. Keep a source copy of selected user-provided pictures in `public/ppt-assets/`. Use the existing Webdev runtime port (expected 3000) and a self-contained static build directory if required by project configuration. For the requested GitHub-to-Vercel handoff, commit the project to the supplied public repository and use a root `vercel.json` to copy the site and assets to a static `dist/` output before linking and deploying it through Vercel.
 
 ## Project structure
 
@@ -14,6 +14,7 @@ Use static assets and a compact JavaScript module; no account, database or other
 - `public/ppt-assets/` — selected original PPT image files and the user-supplied dog photograph used on the site.
 - `public/manus-routes.json` — the canonical one-page route manifest.
 - `dist/` — static deployment output if project build settings require it.
+- `vercel.json` — Vercel build command and static output-directory declaration.
 - `plan.md`, `TODO.md` — design decisions and acceptance outcomes.
 
 ## Design

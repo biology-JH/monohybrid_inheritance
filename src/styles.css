@@ -121,6 +121,9 @@ td:nth-child(2), td:nth-child(4) { color: #385e50; font-weight: 600; }
 .card-gallery .image-frame { min-width: 0; }
 .card-gallery .image-frame img { width: 100%; height: clamp(250px, 24vw, 340px); min-height: 0; max-height: none; object-fit: contain; }
 .card-gallery .visual-note { grid-column: 1 / -1; }
+#core-points .objective-card[data-point="2"] .card-visual { grid-template-columns: minmax(0, 1fr); align-items: stretch; }
+#core-points .objective-card[data-point="2"] .card-visual .image-frame { max-width: none; }
+#core-points .objective-card[data-point="2"] .card-visual .image-frame img { width: 100%; height: auto; min-height: 0; max-height: none; object-fit: contain; }
 #core-points .objective-card[data-point="11"] .card-gallery { grid-template-columns: minmax(0, 1.8fr) minmax(0, 0.82fr); align-items: start; }
 #core-points .objective-card[data-point="11"] .focal-diagram img { width: 100%; height: auto; min-height: 0; max-height: none; object-fit: contain; }
 #extended-points .objective-card[data-point="13"] .card-visual { grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.9fr); align-items: start; }
