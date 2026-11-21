@@ -153,6 +153,22 @@ td:nth-child(2), td:nth-child(4) { color: #385e50; font-weight: 600; }
 .ratio-line strong { color: var(--leaf); }
 .ratio-note { margin-top: 0.8rem; color: var(--muted); }
 
+.video-panel, .response-panel { margin: 2.5rem 0; padding: clamp(1.1rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: 1.3rem; background: var(--white); box-shadow: 0 0.5rem 1.5rem rgb(25 54 43 / 7%); }
+.video-panel { display: grid; grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr); align-items: center; gap: 1.5rem; }
+.video-panel h3, .response-panel h3 { margin: 0 0 0.8rem; font-size: clamp(1.7rem, 3vw, 2.35rem); }
+.video-panel .section-kicker, .response-panel .section-kicker { color: var(--leaf); }
+.video-frame { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 1rem; background: #102d26; box-shadow: 0 0.6rem 1.5rem rgb(0 0 0 / 15%); }
+.video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.video-panel a { color: var(--leaf); font-weight: 700; }
+.extended-video, .extended-response { border-color: #d5b3a7; background: #fffaf6; }
+.open-response { margin-top: 1rem; padding: 1rem; border: 1px solid #c8d5cc; border-radius: 0.9rem; background: #f6f8f2; }
+.open-response h4 { margin: 0 0 0.65rem; color: var(--leaf); font-size: 1.35rem; }
+.open-response > p { margin-bottom: 0.8rem; }
+.open-response label { display: block; margin-bottom: 0.35rem; font-weight: 700; }
+.open-response textarea { display: block; width: 100%; min-height: 8rem; margin: 0 0 0.8rem; padding: 0.7rem; border: 2px solid #789788; border-radius: 0.65rem; color: var(--ink); background: #fffdf8; font: inherit; line-height: 1.45; resize: vertical; }
+.open-response textarea::placeholder { color: #647a71; opacity: 1; }
+.open-response details { border-color: #c8d5cc; background: #fffdf8; }
+
 .plenary-panel { margin: 3rem 0 0; padding: clamp(1.1rem, 3vw, 2rem); border-radius: 1.2rem; color: #fffdf8; background: var(--deep); }
 .plenary-panel .section-kicker { color: #f1c76f; }
 .plenary-panel h3 { color: #fffdf8; }
@@ -168,6 +184,7 @@ td:nth-child(2), td:nth-child(4) { color: #385e50; font-weight: 600; }
 @media (max-width: 900px) {
   .hero { align-items: flex-start; min-height: 560px; padding: 2.4rem clamp(1.2rem, 6vw, 3rem); }
   .feature-panel { grid-template-columns: 1fr; }
+  .video-panel { grid-template-columns: 1fr; }
   .starter-image { max-width: 760px; }
   .card-visual { grid-template-columns: 1fr; }
   .card-visual .image-frame { max-width: 720px; }

@@ -10,7 +10,7 @@ const corePoints = [
   },
   {
     n: 2, title: 'Genotype',
-    text: 'A genotype is an organism’s alleles for a gene. An allele is a form of that gene; both alleles occupy the same locus (基因座) on homologous chromosomes (同源染色體).',
+    text: 'Genotype is an organism’s genetic make-up, described in terms of the alleles present for the gene being studied. An allele is a form of that gene; both alleles occupy the same locus (基因座) on homologous chromosomes (同源染色體).',
     example: 'BB, Bb and bb are genotypes; B and b are alleles at one locus.',
     images: [
       { src: '/ppt-assets/part1_genes-loci.png', alt: 'The same gene locus marked on a pair of homologous chromosomes', caption: 'Alleles of one gene share a locus' }
@@ -169,8 +169,8 @@ const extendedPoints = [
   },
   {
     n: 16, title: 'Sex-linked characteristics',
-    text: 'Humans have 22 pairs of autosomes (常染色體) and one pair of sex chromosomes: usually XX females and XY males. A sex-linked gene is on a sex chromosome, usually X; XY males have one X-linked allele (hemizygous, 半合子).',
-    example: 'Ova carry X; sperm carry X or Y, determining sex with an expected 1:1 ratio. Fathers pass X to daughters and Y to sons, so there is no father-to-son transmission of an X-linked allele.',
+    text: 'A sex-linked characteristic is caused by a gene on a sex chromosome. X-linked recessive characteristics can be more common in XY males because they have only one X-linked allele (hemizygous, 半合子).',
+    example: 'Humans usually have XX females and XY males, with 22 pairs of autosomes (常染色體). Ova carry X; sperm carry X or Y, giving an expected 1:1 sex ratio. Fathers pass X to daughters and Y to sons, so an X-linked allele is not passed from father to son.',
     image: { src: '/ppt-assets/part2_image-19-1.png', alt: 'X and Y sex chromosomes', caption: 'Sex chromosomes' },
     questions: [
       ['Where is the gene for a sex-linked characteristic located?', 'On a sex chromosome.'],
@@ -215,6 +215,18 @@ function renderQuestion(question, index, pointNumber) {
   return `<details><summary>Q${number} · ${escapeHTML(question[0])}</summary><p>${escapeHTML(question[1])}</p></details>`;
 }
 
+function renderOpenResponse(id, prompt, guidance) {
+  const titleId = `open-response-${id}-title`;
+  const fieldId = `open-response-${id}-answer`;
+  return `<section class="open-response" aria-labelledby="${titleId}">
+    <h4 id="${titleId}">Open-ended practice</h4>
+    <p>${escapeHTML(prompt)}</p>
+    <label for="${fieldId}">Write your explanation</label>
+    <textarea id="${fieldId}" rows="4" placeholder="Write your answer here."></textarea>
+    <details><summary>Self-check guidance</summary><p>${escapeHTML(guidance)}</p></details>
+  </section>`;
+}
+
 function renderPoint(point, extended = false) {
   const label = extended ? 'Extended (Supplement)' : 'Core';
   const questionCount = point.questions.length === 3 ? 'Three' : 'Two';
@@ -227,13 +239,17 @@ function renderPoint(point, extended = false) {
         const focalDiagram = (point.n === 11 && index === 0) || point.n === 13;
         const focusAttributes = focalDiagram ? ' tabindex="0" aria-label="Scrollable diagram"' : '';
         return `<figure class="image-frame${focalDiagram ? ' focal-diagram' : ''}"${focusAttributes}><img src="${escapeHTML(picture.src)}" alt="${escapeHTML(picture.alt)}" loading="lazy" /><figcaption>${escapeHTML(picture.caption)}</figcaption></figure>`;
-      }).join('')}${exampleMarkup}</div>`
+    }).join('')}${exampleMarkup}</div>`
     : `<p class="example-line"><strong>Apply it:</strong> ${escapeHTML(point.example || '')}</p>`;
+  const openResponseMarkup = point.n === 10
+    ? renderOpenResponse('pedigree', 'Using the dominant pedigree shown here, assume complete dominance. Infer the genotypes of the affected father and unaffected mother, and explain how their unaffected son supports your conclusion.', 'The unaffected mother is aa. Their unaffected son is aa, so the affected father must have passed on a; he is Aa rather than AA. The affected children can be Aa.')
+    : '';
   return `<article class="objective-card${extended ? ' extended-card' : ''}" data-point="${point.n}" aria-labelledby="point-${point.n}-title">
     <div class="objective-head"><span class="objective-number">${String(point.n).padStart(2, '0')}</span><span class="scope-tag">${label}</span><h3 id="point-${point.n}-title">${escapeHTML(point.title)}</h3></div>
     <p class="explanation">${escapeHTML(point.text)}</p>
     ${imageMarkup}
     <div class="quick-checks"><h4 class="visually-hidden">${questionCount} questions for syllabus point ${point.n}</h4>${point.questions.map((q, i) => renderQuestion(q, i, point.n)).join('')}</div>
+    ${openResponseMarkup}
   </article>`;
 }
 
